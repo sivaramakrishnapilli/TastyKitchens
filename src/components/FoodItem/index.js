@@ -101,7 +101,7 @@ class FoodItem extends Component {
     const {isFound, quantity} = this.state
     console.log(quantity)
     return (
-      <li className={itemClass.ListItem} testid="foodItem">
+      <li className={itemClass.ListItem}>
         <img
           src={foodItem.imageUrl}
           alt="food-item"
@@ -122,22 +122,16 @@ class FoodItem extends Component {
               <button
                 type="button"
                 className="minus-icon-container"
-                testid="decrement-count"
                 onClick={this.decrementCartItemQuantity}
               >
                 <HiOutlineMinusSm className="minus-icon" />
               </button>
-              <button
-                type="button"
-                className="count-value"
-                testid="active-count"
-              >
+              <button type="button" className="count-value">
                 {quantity}
               </button>
               <button
                 type="button"
                 className="plus-icon-container"
-                testid="increment-count"
                 onClick={this.incrementCartItemQuantity}
               >
                 <BsPlus className="plus-icon" />

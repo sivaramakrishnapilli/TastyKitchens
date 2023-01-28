@@ -94,7 +94,7 @@ class RestaurantDetailsRoute extends Component {
   // restaurant loader
 
   restaurantsDisplayLoading = () => (
-    <div className={restaurantClass.Loader} testid="restaurant-details-loader">
+    <div className={restaurantClass.Loader}>
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )

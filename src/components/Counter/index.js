@@ -41,23 +41,13 @@ class Counter extends Component {
     const {currentPage} = this.state
     return (
       <div className="counter-class">
-        <button
-          type="button"
-          onClick={this.onDecrement}
-          className="btn"
-          testid="pagination-left-button"
-        >
+        <button type="button" onClick={this.onDecrement} className="btn">
           <IoIosArrowBack className="icon-class" />
         </button>
         <div className="pages-class">
-          <span testid="active-page-number">{currentPage}</span> of {totalPages}
+          <span>{currentPage}</span> of {totalPages}
         </div>
-        <button
-          type="button"
-          onClick={this.onIncrement}
-          className="btn"
-          testid="pagination-right-button"
-        >
+        <button type="button" onClick={this.onIncrement} className="btn">
           <IoIosArrowForward className="icon-class" />
         </button>
       </div>

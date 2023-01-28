@@ -196,9 +196,7 @@ class CartRoute extends Component {
               <h1 className={cartClass.OrderHeading}>Order Total:</h1>
               <div className={cartClass.TotalAmountContainer}>
                 <BiRupee className={cartClass.TotalRupee} />
-                <p testid="total-price" className={cartClass.TotalAmount}>
-                  {totalAmount}.00
-                </p>
+                <p className={cartClass.TotalAmount}>{totalAmount}.00</p>
               </div>
             </div>
             <button
